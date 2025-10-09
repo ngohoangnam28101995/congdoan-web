@@ -1,0 +1,43 @@
+/* 1) Cho header/navigations chiếm full chiều ngang, không còn max-width */
+.header .nav {
+    max-width: none;      /* bỏ giới hạn var(--main-width) của theme */
+    width: 100%;
+    margin: 0;            /* bỏ margin auto khiến header bị căn giữa */
+    padding: 0 24px;      /* hoặc var(--gap) nếu thích: 0 var(--gap, 24px) */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 2) Logo/tiêu đề đẩy về trái */
+  .header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;   /* quan trọng: đẩy các phần còn lại sang phải */
+  }
+  
+  /* 3) Menu đẩy về phía phải */
+  #menu {
+    display: flex;
+    gap: var(--gap, 14px);
+    margin-left: auto;    /* quan trọng: dính qua phải */
+    align-items: center;
+  }
+  
+  /* (Tuỳ chọn) Gạch chân nhẹ để header tách khỏi nội dung */
+  .header {
+    border-bottom: 1px solid var(--border, rgba(0,0,0,0.08));
+  }
+  
+  /* 4) Mobile: đừng ép menu sang phải để tránh vỡ layout */
+  @media (max-width: 768px) {
+    .header .nav { padding: 0 16px; }
+    #menu { margin-left: 0; }
+  }
+
+  /* Dịch toàn bộ thanh header sang phải */
+header.header {
+  padding-left: 60px !important; /* khoảng cách chừa cho ☰ */
+  transition: padding 0.3s ease;
+}
+
+  

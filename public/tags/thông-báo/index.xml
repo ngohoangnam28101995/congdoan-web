@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Thông Báo on Công đoàn Công ty</title>
+    <link>//localhost:1313/tags/th%C3%B4ng-b%C3%A1o/</link>
+    <description>Recent content in Thông Báo on Công đoàn Công ty</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/th%C3%B4ng-b%C3%A1o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chào mừng</title>
+      <link>//localhost:1313/posts/chao-mung/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/chao-mung/</guid>
+      <description>Giới thiệu trang công đoàn</description>
+    </item>
+  </channel>
+</rss>

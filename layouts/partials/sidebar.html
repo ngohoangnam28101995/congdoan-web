@@ -1,0 +1,123 @@
+<!-- Nút mở Sidebar -->
+<span class="menu-icon" onclick="openNav()">☰</span>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <h3 class="sidebar-title">CÔNG ĐOÀN CÔNG TY</h3>
+  <a href="/">🏠 Giới thiệu Công đoàn</a>
+  <a href="/bch/">👥 Ban Chấp Hành Công đoàn</a>
+  <a href="/hoatdong/">🎉 Hoạt động & Sự kiện</a>
+  <a href="/tailieu/">📂 Biểu mẫu & Tài liệu</a>
+  <a href="/gopy/">💬 Góp ý - Kiến nghị</a>
+</div>
+
+<div id="sidebar-overlay" onclick="closeNav()"></div>
+
+<!-- Font đẹp từ Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Sidebar Cơ bản ===== */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: var(--sidebar-bg, #fdfdfd);
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  padding-top: 60px;
+  border-right: 1px solid #ddd;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+/* Liên kết trong sidebar */
+.sidebar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  border-radius: 8px;
+  margin: 4px 10px;
+  transition: all 0.2s ease;
+}
+
+/* Hiệu ứng hover */
+.sidebar a:hover {
+  background-color: #e8f0fe;
+  color: #004aad;
+}
+
+/* Mục đang active */
+.sidebar a.active {
+  background-color: #004aad;
+  color: white;
+  font-weight: 600;
+}
+
+/* Tiêu đề sidebar */
+.sidebar-title {
+  padding: 0 20px 14px;
+  color: #004aad;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Overlay */
+#sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 998;
+}
+
+/* Nút menu */
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  margin: 12px;
+  user-select: none;
+  color: #004aad;
+  font-family: 'Inter', sans-serif;
+}
+</style>
+
+<script>
+function openNav() {
+  const sidebar = document.getElementById("mySidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  sidebar.style.width = "260px";
+  overlay.style.display = "block";
+}
+
+function closeNav() {
+  const sidebar = document.getElementById("mySidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  sidebar.style.width = "0";
+  overlay.style.display = "none";
+}
+
+// ===== Tự động highlight menu hiện tại =====
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".sidebar a[href]");
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    const linkPath = link.getAttribute("href").replace(/\/$/, "");
+    const current = currentPath.replace(/\/$/, "");
+    if (linkPath && current.startsWith(linkPath) && linkPath !== "javascript:void(0)") {
+      link.classList.add("active");
+    }
+  });
+});
+</script>

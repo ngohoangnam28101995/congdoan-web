@@ -1,0 +1,96 @@
+{{- /* Params */ -}}
+{{- $dir   := .Get "dir"   | default "tailieu" -}}
+{{- $exts  := .Get "exts"  | default "" -}}
+{{- $sort  := .Get "sort"  | default "name" -}}
+{{- $order := .Get "order" | default "asc" -}}
+
+{{- $root := printf "static/%s" $dir -}}
+{{- $files := readDir $root -}}
+
+{{- /* lọc theo đuôi nếu có */ -}}
+{{- if $exts -}}
+  {{- $allow := slice -}}
+  {{- range (split (lower $exts) ",") -}}
+    {{- $allow = $allow | append (trim . " ") -}}
+  {{- end -}}
+  {{- $tmp := slice -}}
+  {{- range $files -}}
+    {{- if not .IsDir -}}
+      {{- $ext := lower (replaceRE "^.*\\." "" .Name) -}}
+      {{- if in $allow $ext -}}
+        {{- $tmp = $tmp | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $files = $tmp -}}
+{{- else -}}
+  {{- $tmp := slice -}}
+  {{- range $files -}}
+    {{- if not .IsDir -}}
+      {{- $tmp = $tmp | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $files = $tmp -}}
+{{- end -}}
+
+{{- /* sort */ -}}
+{{- if eq $sort "time" -}}
+  {{- $files = sort $files "ModTime" (cond (eq $order "desc") "desc" "asc") -}}
+{{- else if eq $sort "size" -}}
+  {{- $files = sort $files "Size" (cond (eq $order "desc") "desc" "asc") -}}
+{{- else -}}
+  {{- $files = sort $files "Name" (cond (eq $order "desc") "desc" "asc") -}}
+{{- end -}}
+
+{{- if not (len $files) -}}
+<p>Chưa có tệp nào trong <code>/{{ $dir }}</code>.</p>
+{{- else -}}
+<ul class="dl-list">
+  {{- range $files }}
+    {{- $href := printf "/%s/%s" $dir .Name -}}
+
+    {{- /* icon theo đuôi (không dùng func) */ -}}
+    {{- $ext := lower (replaceRE "^.*\\." "" .Name) -}}
+    {{- $emoji := "🧾" -}}
+    {{- if in (slice "pdf") $ext -}}      {{- $emoji = "📄" -}}
+    {{- else if in (slice "doc" "docx") $ext -}} {{- $emoji = "📝" -}}
+    {{- else if in (slice "xls" "xlsx" "csv") $ext -}} {{- $emoji = "📊" -}}
+    {{- else if in (slice "png" "jpg" "jpeg" "gif" "webp") $ext -}} {{- $emoji = "🖼️" -}}
+    {{- else if in (slice "txt" "md") $ext -}} {{- $emoji = "📃" -}}
+    {{- end -}}
+
+    {{- /* format size (không dùng func) */ -}}
+    {{- $size := .Size -}}
+    {{- $sizeStr := "" -}}
+    {{- if lt $size 1024 -}}
+      {{- $sizeStr = printf "%d B" $size -}}
+    {{- else if lt $size 1048576 -}}
+      {{- $sizeStr = printf "%.0f KB" (div (float $size) 1024) -}}
+    {{- else if lt $size 1073741824 -}}
+      {{- $sizeStr = printf "%.1f MB" (div (float $size) 1048576) -}}
+    {{- else -}}
+      {{- $sizeStr = printf "%.1f GB" (div (float $size) 1073741824) -}}
+    {{- end -}}
+
+    <li class="dl-item">
+      <a class="dl-link" href="{{ $href }}" target="_blank" rel="noopener">
+        {{ $emoji }} {{ .Name }}
+      </a>
+      <span class="dl-meta">
+        ({{ $sizeStr }} · Cập nhật: {{ .ModTime | time.Format "2006-01-02" }})
+      </span>
+      <a class="dl-btn" href="{{ $href }}" download="{{ .Name }}" rel="noopener">Tải xuống</a>
+    </li>
+  {{- end }}
+</ul>
+
+<style>
+.dl-list{list-style:none;padding:0;margin:0}
+.dl-item{display:flex;align-items:center;gap:8px;margin:10px 0;flex-wrap:wrap}
+.dl-link{text-decoration:none;padding:8px 12px;border:1px solid #ddd;border-radius:8px;display:inline-block}
+.dl-link:hover{background:#f3f6ff}
+.dl-meta{margin-left:4px;color:#666;font-size:0.9em}
+.dl-btn{margin-left:8px;text-decoration:none;padding:6px 10px;border:1px solid #004aad;border-radius:8px}
+.dl-btn:hover{background:#e8f0fe}
+</style>
+{{- end -}}

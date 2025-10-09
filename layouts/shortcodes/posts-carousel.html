@@ -1,0 +1,79 @@
+{{- $section := .Get "section" | default "hoatdong" -}}
+{{- $count := .Get "count" | default 1 -}}  <!-- chỉ 1 bài -->
+{{- $uid := printf "postswp-%d" now.UnixNano -}}
+{{- /* Lấy các trang trong section, sắp theo Date giảm dần */ -}}
+{{- $src := where .Site.RegularPages "Section" $section -}}
+{{- $pages := first (int $count) (sort $src "Date" "desc") -}}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- THÊM class 'swiper' ở container -->
+<div class="swiper post-swiper {{ $uid }}">
+  <div class="swiper-wrapper">
+    {{- range $p := $pages -}}
+      {{- /* Ảnh cover ưu tiên: params.cover.image → cover* → *featured* → ảnh đầu tiên → fallback */ -}}
+      {{- $img := "" -}}
+      {{- with $p.Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end -}}
+      {{- if not $img -}}
+        {{- with $p.Resources.GetMatch "cover*" }}{{ $img = .RelPermalink }}{{ end -}}
+      {{- end -}}
+      {{- if not $img -}}
+        {{- with $p.Resources.GetMatch "*featured*" }}{{ $img = .RelPermalink }}{{ end -}}
+      {{- end -}}
+      {{- if not $img -}}
+        {{- with ($p.Resources.ByType "image") }}{{ with (index . 0) }}{{ $img = .RelPermalink }}{{ end }}{{ end -}}
+      {{- end -}}
+      {{- if not $img -}}
+        {{- $img = "/CMI_LOGO.jpeg" -}}
+      {{- end -}}
+
+      <div class="swiper-slide">
+        <a class="pcard" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}">
+          <div class="pcard-img"><img src="{{ $img }}" loading="lazy" alt="{{ $p.Title }}"></div>
+          <div class="pcard-body">
+            <h3 class="pcard-title">{{ $p.Title }}</h3>
+            <div class="pcard-meta">{{ $p.Date.Format "02/01/2006" }}</div>
+            <p class="pcard-excerpt">
+              {{ with $p.Params.description }}{{ . | plainify | truncate 140 }}{{ else }}{{ $p.Summary | plainify | truncate 140 }}{{ end }}
+            </p>
+          </div>
+        </a>
+      </div>
+    {{- end -}}
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev" aria-label="Prev"></div>
+  <div class="swiper-button-next" aria-label="Next"></div>
+</div>
+
+<style>
+.post-swiper.{{ $uid }}{width:100%}
+.post-swiper.{{ $uid }} .swiper-wrapper{padding-bottom:36px}
+
+/* Fallback nếu CSS Swiper không tải: đảm bảo trượt ngang */
+.post-swiper.{{ $uid }} .swiper-wrapper{display:flex}
+.post-swiper.{{ $uid }} .swiper-slide{flex-shrink:0;height:auto}
+
+.pcard{display:block;background:var(--theme);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit}
+.pcard-img{aspect-ratio:16/9;background:var(--code-bg)}
+.pcard-img img{width:100%;height:100%;object-fit:cover;display:block}
+.pcard-body{padding:12px 14px 16px}
+.pcard-title{font-size:18px;line-height:1.3;margin:0 0 6px}
+.pcard-meta{font-size:13px;opacity:.75;margin-bottom:6px}
+.pcard-excerpt{margin:0;font-size:14px;color:var(--content);opacity:.9}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.post-swiper.{{ $uid }}', {
+  loop: true,
+  autoplay: { delay: 3500, disableOnInteraction: false },
+  slidesPerView: 1,
+  pagination: { el: '.post-swiper.{{ $uid }} .swiper-pagination', clickable: true },
+  navigation: {
+    nextEl: '.post-swiper.{{ $uid }} .swiper-button-next',
+    prevEl: '.post-swiper.{{ $uid }} .swiper-button-prev'
+  }
+});
+</script>

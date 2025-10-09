@@ -1,0 +1,79 @@
+baseURL = "https://ngohoangnam28101995.github.io/congdoan-web/"
+languageCode = "en-us"
+title = "Công đoàn CMI"
+theme = "PaperMod"
+canonifyURLs = true
+
+[params]
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  #ShowSharebuttons = true
+  ShowPostNavLinks = true
+
+  [params.label]
+    text = "Công đoàn công ty TNHH Corsair Marine"          
+    icon = "CMI_LOGO.jpeg"   
+    iconHeight = 50             
+
+
+  [params.cover]
+    linkFullImages = true
+  [params.assets]
+    css = ["css/extended/custom.css"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archives = "archives"
+
+[menu]
+  #[[menu.main]]
+  #  identifier = "categories"
+  #  name = "Categories"
+  #  url = "/categories/"
+  #  weight = 5
+
+  #[[menu.main]]
+  #  identifier = "tags"
+  #  name = "Tags"
+  #  url = "/tags/"
+  #  weight = 10
+
+  #[[menu.main]]
+  #  identifier = "archives"
+  #  name = "Archives"
+  #  url = "/archives/"
+  #  weight = 15
+
+  [[menu.sidebar]]
+    name = "Trang chủ"
+    url = "/"
+    weight = 1
+
+  [[menu.sidebar]]
+    name = "Tin tức"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.sidebar]]
+    name = "Sự kiện"
+    url = "/tags/su-kien/"
+    weight = 3
+
+  [[menu.sidebar]]
+    name = "Giới thiệu"
+    url = "/gioi-thieu/"
+    weight = 4
+
+  [[menu.sidebar]]
+    name = "Liên hệ"
+    url = "/lien-he/"
+    weight = 5
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+

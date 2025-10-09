@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main class="main list grid3">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+  <div class="grid3-container">
+    {{ range $paginator.Pages }}
+      <article class="grid3-card">
+        <a class="card-link" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+          <div class="card-cover">
+            {{/* Ưu tiên ảnh cover trong front matter; nếu không có thì lấy ảnh đầu tiên */}}
+            {{ $img := "" }}
+            {{ with .Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end }}
+            {{ if not $img }}{{ with .Params.images }}{{ $img = index . 0 }}{{ end }}{{ end }}
+            {{ if not $img }}{{ with (.Resources.ByType "image").GetMatch "*" }}{{ $img = .RelPermalink }}{{ end }}{{ end }}
+
+            {{ if $img }}
+              <img src="{{ $img }}" alt="{{ .Title }}">
+            {{ else }}
+              <div class="card-cover--placeholder">No image</div>
+            {{ end }}
+          </div>
+
+          <div class="card-body">
+            <h2 class="card-title">{{ .Title }}</h2>
+            <time class="card-date">{{ .Date.Format "02/01/2006" }}</time>
+            <p class="card-summary">
+              {{ with .Summary }}{{ . | plainify | truncate 140 }}{{ end }}
+            </p>
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination">
+      {{ template "_internal/pagination.html" . }}
+    </nav>
+  {{ end }}
+</main>
+{{ end }}
