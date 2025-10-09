@@ -9,7 +9,7 @@ layout: "list"
 
 Dưới đây là các tệp có thể xem trực tiếp hoặc tải xuống:
 
-{{< static-downloads dir="tailieu" exts="pdf,doc,docx,xls,xlsx,csv" sort="name" order="asc" >}}
+{{< static-downloads dir="Tailieu" exts="pdf,doc,docx,xls,xlsx,csv" sort="name" order="asc" >}}
 
 
 ---
