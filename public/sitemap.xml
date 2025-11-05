@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/congdoan-web/gopy/</loc>
+    <loc>http://localhost:1313/gopy/</loc>
     <lastmod>2025-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/bch/</loc>
+    <loc>http://localhost:1313/bch/</loc>
     <lastmod>2025-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/tailieu/</loc>
+    <loc>http://localhost:1313/tailieu/</loc>
     <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/</loc>
+    <loc>http://localhost:1313/hoatdong/</loc>
     <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/10-10-2025-nguoi-phu-nu-sat-thep/</loc>
+    <loc>http://localhost:1313/hoatdong/10-10-2025-nguoi-phu-nu-sat-thep/</loc>
     <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/09-10-2025-bai3/</loc>
+    <loc>http://localhost:1313/hoatdong/09-10-2025-bai3/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/08-10-2025-bai1/</loc>
+    <loc>http://localhost:1313/hoatdong/08-10-2025-bai1/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/09-10-2025-bai7/</loc>
+    <loc>http://localhost:1313/hoatdong/09-10-2025-bai6/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/08-10-2025-bai2/</loc>
+    <loc>http://localhost:1313/hoatdong/09-10-2025-bai7/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/09-10-2025-bai4/</loc>
+    <loc>http://localhost:1313/hoatdong/08-10-2025-bai2/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/09-10-2025-bai5/</loc>
+    <loc>http://localhost:1313/hoatdong/09-10-2025-bai4/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/hoatdong/09-10-2025-bai6/</loc>
+    <loc>http://localhost:1313/hoatdong/09-10-2025-bai5/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/congdoan-web/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

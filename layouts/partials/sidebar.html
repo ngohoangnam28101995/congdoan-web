@@ -1,7 +1,6 @@
-<!-- Nút mở Sidebar -->
+<!-- ===== Sidebar mở / đóng ===== -->
 <span class="menu-icon" onclick="openNav()">☰</span>
 
-<!-- Sidebar -->
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
@@ -13,30 +12,35 @@
   <a href="/gopy/">💬 Góp ý - Kiến nghị</a>
 </div>
 
-<div id="sidebar-overlay" onclick="closeNav()"></div>
-
-<!-- Font đẹp từ Google Fonts -->
+<!-- Font chữ -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* ===== Sidebar Cơ bản ===== */
+/* ===== Sidebar cố định ===== */
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 260px;
   position: fixed;
-  z-index: 999;
   top: 0;
   left: 0;
   background-color: var(--sidebar-bg, #fdfdfd);
-  overflow-x: hidden;
-  transition: width 0.3s ease;
-  padding-top: 60px;
   border-right: 1px solid #ddd;
+  overflow-y: auto;
+  z-index: 999;
+  padding-top: 60px;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.2px;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  box-shadow: 2px 0 6px rgba(0,0,0,0.05);
 }
 
-/* Liên kết trong sidebar */
+/* Khi ẩn sidebar */
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Liên kết */
 .sidebar a {
   padding: 12px 20px;
   text-decoration: none;
@@ -48,20 +52,18 @@
   transition: all 0.2s ease;
 }
 
-/* Hiệu ứng hover */
 .sidebar a:hover {
   background-color: #e8f0fe;
   color: #004aad;
 }
 
-/* Mục đang active */
 .sidebar a.active {
   background-color: #004aad;
   color: white;
   font-weight: 600;
 }
 
-/* Tiêu đề sidebar */
+/* Tiêu đề */
 .sidebar-title {
   padding: 0 20px 14px;
   color: #004aad;
@@ -69,46 +71,112 @@
   font-weight: 600;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-/* Overlay */
-#sidebar-overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.4);
-  z-index: 998;
-}
-
-/* Nút menu */
+/* Nút mở */
 .menu-icon {
   font-size: 26px;
   cursor: pointer;
   margin: 12px;
   user-select: none;
   color: #004aad;
-  font-family: 'Inter', sans-serif;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
+
+/* Nút đóng */
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* ===== Dịch toàn bộ nội dung chính sang phải ===== */
+.main-content,
+.content,
+.wrapper,
+.site-content {
+  margin-left: 260px;
+  transition: margin-left 0.3s ease;
+  padding: 0 30px;
+}
+
+/* Khi sidebar ẩn thì nội dung trở lại */
+.sidebar.closed ~ .main-content,
+.sidebar.closed ~ .content,
+.sidebar.closed ~ .wrapper,
+.sidebar.closed ~ .site-content {
+  margin-left: 0;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .main-content,
+  .content,
+  .wrapper,
+  .site-content {
+    margin-left: 0;
+    padding: 0 16px;
+  }
+}
+
+/* ===== Điều chỉnh Header để không bị sidebar che ===== */
+.header,
+header.header {
+  margin-left: 260px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Khi sidebar đóng thì header trở lại bình thường */
+.sidebar.closed ~ .header,
+.sidebar.closed ~ header.header {
+  margin-left: 0;
+}
+
+/* Responsive: header full width trên mobile */
+@media (max-width: 768px) {
+  .header,
+  header.header {
+    margin-left: 0;
+  }
+}
+
 </style>
 
 <script>
+const sidebar = document.getElementById("mySidebar");
+
+// ======== Hàm mở / đóng ========
 function openNav() {
-  const sidebar = document.getElementById("mySidebar");
-  const overlay = document.getElementById("sidebar-overlay");
-  sidebar.style.width = "260px";
-  overlay.style.display = "block";
+  sidebar.classList.remove("closed");
+  localStorage.setItem("sidebarState", "open");
 }
 
 function closeNav() {
-  const sidebar = document.getElementById("mySidebar");
-  const overlay = document.getElementById("sidebar-overlay");
-  sidebar.style.width = "0";
-  overlay.style.display = "none";
+  sidebar.classList.add("closed");
+  localStorage.setItem("sidebarState", "closed");
 }
 
-// ===== Tự động highlight menu hiện tại =====
+// ======== Ghi nhớ trạng thái sidebar ========
 document.addEventListener("DOMContentLoaded", function () {
+  const state = localStorage.getItem("sidebarState");
+  if (state === "closed") {
+    sidebar.classList.add("closed");
+  }
+
+  // ===== Highlight menu hiện tại =====
   const links = document.querySelectorAll(".sidebar a[href]");
   const currentPath = window.location.pathname;
 

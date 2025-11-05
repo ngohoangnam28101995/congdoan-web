@@ -11,7 +11,7 @@ canonifyURLs = true
   ShowPostNavLinks = true
 
   [params.label]
-    text = "Công đoàn công ty TNHH Corsair Marine"          
+    text = "CÔNG TY TNHH CORSAIR MARINE INTERNATIONAL"          
     icon = "CMI_LOGO.jpeg"   
     iconHeight = 50             
 
