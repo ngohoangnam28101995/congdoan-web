@@ -9,7 +9,7 @@ cover:
 
 hiddenInHomeList: true  
 ---
-Theo thông báo số 1 ngày **21/06/2022**, nay Công đoàn cơ sở **Công ty TNHH Corsair Marine International** 
+Theo thông báo số 1 ngày **10/11/2025**, nay Công đoàn cơ sở **Công ty TNHH Corsair Marine International** 
 thông báo chính thức lịch thi đấu và địa điểm thi đấu các môn sau:
 
 - **Bóng đá**
