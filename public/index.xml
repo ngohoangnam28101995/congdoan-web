@@ -13,70 +13,16 @@
       <link>http://localhost:1313/hoatdong/10-11-2025-hoi-thao-cong-doan/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hoatdong/10-11-2025-hoi-thao-cong-doan/</guid>
-      <description>&lt;p&gt;Dưới đây là lịch trình các hoạt động diễn ra trong tháng 11, bao gồm thi đấu thể thao, trò chơi,
-và sự kiện tổng kết. Mỗi hoạt động được ghi rõ thời gian, địa điểm và địa chỉ để thuận tiện cho việc theo dõi và tham gia.&lt;/p&gt;
-&lt;table style=&#34;border-collapse: collapse; width: 100%;&#34;&gt;
-  &lt;thead&gt;
-    &lt;tr style=&#34;background-color: #e6f2ff; font-weight: bold;&#34;&gt;
-      &lt;th style=&#34;border: 2px solid #444; padding: 8px;&#34;&gt;Thời gian&lt;/th&gt;
-      &lt;th style=&#34;border: 2px solid #444; padding: 8px;&#34;&gt;Ngày&lt;/th&gt;
-      &lt;th style=&#34;border: 2px solid #444; padding: 8px;&#34;&gt;Hoạt động&lt;/th&gt;
-      &lt;th style=&#34;border: 2px solid #444; padding: 8px;&#34;&gt;Địa điểm&lt;/th&gt;
-      &lt;th style=&#34;border: 2px solid #444; padding: 8px;&#34;&gt;Địa chỉ&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;18:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;11-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Cầu lông nữ&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sân cầu lông Quốc Việt&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;136 Bùi Văn Ba&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;16:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;15-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Vòng 1-2 môn đá banh&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sân bóng đá Phương Thảo&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;206/6 Đ. Đào Trí&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;13:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;16-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Thi môn bi da&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sky Arena&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;63 Nguyễn Thị Thập&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;18:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;18-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Vòng loại môn cầu lông (hỗn hợp)&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sân cầu lông Quốc Việt&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;136 Bùi Văn Ba&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;16:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;22-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Vòng 3-4 môn đá banh&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sân bóng đá Phương Thảo&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;206/6 Đ. Đào Trí&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;18:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;25-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Vòng chung kết môn cầu lông (hỗn hợp)&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sân cầu lông Quốc Việt&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;136 Bùi Văn Ba&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;8:00&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;30-Nov-25&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Thi môn nấu ăn, trò chơi vận động, tổng kết&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;Sông Quê 5&lt;/td&gt;
-      &lt;td style=&#34;border: 1px solid #444; padding: 6px;&#34;&gt;187 Đào Trí&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</description>
+      <description>&lt;p&gt;Theo thông báo số 1 ngày &lt;strong&gt;21/06/2022&lt;/strong&gt;, nay Công đoàn cơ sở &lt;strong&gt;Công ty TNHH Corsair Marine International&lt;/strong&gt;
+thông báo chính thức lịch thi đấu và địa điểm thi đấu các môn sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bóng đá&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cầu lông&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nấu ăn&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bi da&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Để ngày hội thao được tổ chức thành công tốt đẹp, BTC trân trọng kính mời tất cả Anh/Chị/Em
+công nhân viên công ty sắp xếp thời gian đến cổ vũ và ủng hộ cho các đội tham gia thi đấu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Người phụ nữ &#39;sắt thép&#39; giữ lửa công đoàn ở Corsair Marine International</title>

@@ -9,8 +9,17 @@ cover:
 
 hiddenInHomeList: true  
 ---
-Dưới đây là lịch trình các hoạt động diễn ra trong tháng 11, bao gồm thi đấu thể thao, trò chơi, 
-và sự kiện tổng kết. Mỗi hoạt động được ghi rõ thời gian, địa điểm và địa chỉ để thuận tiện cho việc theo dõi và tham gia.
+Theo thông báo số 1 ngày **21/06/2022**, nay Công đoàn cơ sở **Công ty TNHH Corsair Marine International** 
+thông báo chính thức lịch thi đấu và địa điểm thi đấu các môn sau:
+
+- **Bóng đá**
+- **Cầu lông**
+- **Nấu ăn**
+- **Bi da**
+
+Để ngày hội thao được tổ chức thành công tốt đẹp, BTC trân trọng kính mời tất cả Anh/Chị/Em 
+công nhân viên công ty sắp xếp thời gian đến cổ vũ và ủng hộ cho các đội tham gia thi đấu.
+
 
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
