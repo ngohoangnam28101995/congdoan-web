@@ -2,7 +2,7 @@
 title: "Hội thao Công Đoàn Công ty TNHH Corsair Marine International"
 date: 2025-11-10
 description: ""
-external_url: "https://laodongcongdoan.vn/nguoi-phu-nu-sat-thep-giu-lua-cong-doan-o-corsair-marine-international-112762.html"
+external_url: ""
 cover:
   image: "/CMI_LOGO.jpeg"
   hiddenInSingle: true 
