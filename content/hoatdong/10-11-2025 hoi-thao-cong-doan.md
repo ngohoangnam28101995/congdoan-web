@@ -42,43 +42,43 @@ công nhân viên công ty sắp xếp thời gian đến cổ vũ và ủng h�
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">16:00</td>
       <td style="border: 1px solid #444; padding: 6px;">15-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Vòng 1-2 môn đá banh</td>
+      <td style="border: 1px solid #444; padding: 6px;">Đá banh (vòng 1+2)</td>
       <td style="border: 1px solid #444; padding: 6px;">Sân bóng đá Phương Thảo</td>
       <td style="border: 1px solid #444; padding: 6px;">206/6 Đ. Đào Trí</td>
     </tr>
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">13:00</td>
       <td style="border: 1px solid #444; padding: 6px;">16-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Thi môn bi da</td>
-      <td style="border: 1px solid #444; padding: 6px;">Sky Arena</td>
+      <td style="border: 1px solid #444; padding: 6px;">Bi da</td>
+      <td style="border: 1px solid #444; padding: 6px;">CLB bi da Sky Arena</td>
       <td style="border: 1px solid #444; padding: 6px;">63 Nguyễn Thị Thập</td>
     </tr>
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">18:00</td>
       <td style="border: 1px solid #444; padding: 6px;">18-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Vòng loại môn cầu lông (hỗn hợp)</td>
+      <td style="border: 1px solid #444; padding: 6px;">Vòng loại cầu lông (nam + nữ)</td>
       <td style="border: 1px solid #444; padding: 6px;">Sân cầu lông Quốc Việt</td>
       <td style="border: 1px solid #444; padding: 6px;">136 Bùi Văn Ba</td>
     </tr>
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">16:00</td>
       <td style="border: 1px solid #444; padding: 6px;">22-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Vòng 3-4 môn đá banh</td>
+      <td style="border: 1px solid #444; padding: 6px;">Đá banh (vòng 3+4)</td>
       <td style="border: 1px solid #444; padding: 6px;">Sân bóng đá Phương Thảo</td>
       <td style="border: 1px solid #444; padding: 6px;">206/6 Đ. Đào Trí</td>
     </tr>
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">18:00</td>
       <td style="border: 1px solid #444; padding: 6px;">25-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Vòng chung kết môn cầu lông (hỗn hợp)</td>
+      <td style="border: 1px solid #444; padding: 6px;">Vòng chung kết cầu lông (nam + nữ)</td>
       <td style="border: 1px solid #444; padding: 6px;">Sân cầu lông Quốc Việt</td>
       <td style="border: 1px solid #444; padding: 6px;">136 Bùi Văn Ba</td>
     </tr>
     <tr>
       <td style="border: 1px solid #444; padding: 6px;">8:00</td>
       <td style="border: 1px solid #444; padding: 6px;">30-Nov-25</td>
-      <td style="border: 1px solid #444; padding: 6px;">Thi môn nấu ăn, trò chơi vận động, tổng kết</td>
-      <td style="border: 1px solid #444; padding: 6px;">Sông Quê 5</td>
+      <td style="border: 1px solid #444; padding: 6px;">Nấu ăn, trò chơi vận động, tổng kết</td>
+      <td style="border: 1px solid #444; padding: 6px;">Nhà hàng Sông Quê 5</td>
       <td style="border: 1px solid #444; padding: 6px;">187 Đào Trí</td>
     </tr>
   </tbody>
