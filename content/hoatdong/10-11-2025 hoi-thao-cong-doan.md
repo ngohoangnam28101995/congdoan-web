@@ -29,7 +29,7 @@ công nhân viên công ty sắp xếp thời gian đến cổ vũ và ủng h�
     <tr style="background-color: #e6f2ff; font-weight: bold;">
       <th style="border: 2px solid #444; padding: 8px;">Thời gian</th>
       <th style="border: 2px solid #444; padding: 8px;">Ngày</th>
-      <th style="border: 2px solid #444; padding: 8px;">Hoạt động</th>
+      <th style="border: 2px solid #444; padding: 8px;">Môn thi đấu</th>
       <th style="border: 2px solid #444; padding: 8px;">Địa điểm</th>
       <th style="border: 2px solid #444; padding: 8px;">Địa chỉ</th>
     </tr>
