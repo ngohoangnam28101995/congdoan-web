@@ -84,7 +84,7 @@ ShowBreadCrumbs: true
 | 3   | Lý Trọng Nghĩa        | Phó chủ tịch       |
 | 4   | Lương Ái Nhân      | Ủy viên       |
 | 5   | Nguyễn Thị Ánh Dương        | Ủy viên       |
-| 6   | Trần Hoàng Bảo An       | Ủy viên       |
+| 6   | Võ Lê Phương Hà       | Ủy viên       |
 | 7   | Ngô Hoàng Nam      | Ủy viên  |
 | 8   | Nguyễn Văn Dũng        | Ủy viên       |
 | 9   | Nguyễn Ngọc Quý      | Ủy viên       |

@@ -4,11 +4,14 @@ date: 2025-11-10
 description: ""
 external_url: ""
 cover:
-  image: "/CMI_LOGO.jpeg"
+  image: "/Hoatdong/Hoithao-2025/backdrop-hoithao-2025.png"
   hiddenInSingle: true 
 
 hiddenInHomeList: true  
 ---
+
+![Backdrop](/Hoatdong/Hoithao-2025/backdrop-hoithao-2025.png)
+
 Theo thông báo số 1 ngày **09/10/2025**, nay Công đoàn cơ sở **Công ty TNHH Corsair Marine International** 
 thông báo chính thức lịch thi đấu và địa điểm thi đấu các môn sau:
 
