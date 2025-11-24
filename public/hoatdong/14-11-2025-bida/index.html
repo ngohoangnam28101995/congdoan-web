@@ -61,6 +61,25 @@
 </head>
 
 <body class="" id="top">
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="http://localhost:1313/background/noel.mp4" type="video/mp4">
+</video>
+
+<style>
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.45;  
+}
+</style>
+   
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -322,6 +341,11 @@ document.addEventListener("DOMContentLoaded", function () {
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
+  <a class="prev" href="http://localhost:1313/hoatdong/18-11-2025-cau-long-nam-nu/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Môn thi cầu lông nam nữ Công ty TNHH Corsair Marine International</span>
+  </a>
   <a class="next" href="http://localhost:1313/hoatdong/14-11-2025-bong-da-nam/">
     <span class="title">Next »</span>
     <br>
@@ -402,6 +426,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 </script>
+
+<script src="http://localhost:1313/js/snow.min.69a2a2c179e07cf23a06ce375a327f5eb33abb2c888c2dfa0420addf854a3daa.js"></script>
+  
 </body>
 
 </html>

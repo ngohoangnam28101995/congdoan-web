@@ -60,6 +60,25 @@
 </head>
 
 <body class="list" id="top">
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="http://localhost:1313/background/noel.mp4" type="video/mp4">
+</video>
+
+<style>
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.45;  
+}
+</style>
+   
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -446,7 +465,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   
-  <div id="slider-1763455738" class="slider" style="max-width: 100%;">
+  <div id="slider-1763948548" class="slider" style="max-width: 100%;">
     
       
       
@@ -617,7 +636,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   <script>
   (function() {
-    const root = document.getElementById("slider-1763455738");
+    const root = document.getElementById("slider-1763948548");
     if (!root) return;
   
     const track = root.querySelector(".slider-track");
@@ -734,6 +753,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 </script>
+
+<script src="http://localhost:1313/js/snow.min.69a2a2c179e07cf23a06ce375a327f5eb33abb2c888c2dfa0420addf854a3daa.js"></script>
+  
 </body>
 
 </html>

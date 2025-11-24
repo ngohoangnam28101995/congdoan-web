@@ -61,6 +61,25 @@
 </head>
 
 <body class="list" id="top">
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="http://localhost:1313/background/noel.mp4" type="video/mp4">
+</video>
+
+<style>
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.45;  
+}
+</style>
+   
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -305,12 +324,12 @@ Cùng nhau xây dựng môi trường làm việc đoàn kết, an toàn và h�
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 
-<div class="swiper post-swiper postswp-1763455749997053500">
+<div class="swiper post-swiper postswp-1763948548523513400">
   <div class="swiper-wrapper"><div class="swiper-slide">
-        <a class="pcard" href="http://localhost:1313/hoatdong/18-11-2025-cau-long-nam-nu/" aria-label="Môn thi bóng đá nam Công ty TNHH Corsair Marine International">
-          <div class="pcard-img"><img src="http://localhost:1313/Hoatdong/Hoithao-2025/caulong-namnu-2025.png" loading="lazy" alt="Môn thi bóng đá nam Công ty TNHH Corsair Marine International"></div>
+        <a class="pcard" href="http://localhost:1313/hoatdong/18-11-2025-cau-long-nam-nu/" aria-label="Môn thi cầu lông nam nữ Công ty TNHH Corsair Marine International">
+          <div class="pcard-img"><img src="http://localhost:1313/Hoatdong/Hoithao-2025/caulong-namnu-2025.png" loading="lazy" alt="Môn thi cầu lông nam nữ Công ty TNHH Corsair Marine International"></div>
           <div class="pcard-body">
-            <h3 class="pcard-title">Môn thi bóng đá nam Công ty TNHH Corsair Marine International</h3>
+            <h3 class="pcard-title">Môn thi cầu lông nam nữ Công ty TNHH Corsair Marine International</h3>
             <div class="pcard-meta">18/11/2025</div>
             <p class="pcard-excerpt">
               
@@ -359,12 +378,12 @@ Cùng nhau xây dựng môi trường làm việc đoàn kết, an toàn và h�
 </div>
 
 <style>
-.post-swiper.postswp-1763455749997053500{width:100%}
-.post-swiper.postswp-1763455749997053500 .swiper-wrapper{padding-bottom:36px}
+.post-swiper.postswp-1763948548523513400{width:100%}
+.post-swiper.postswp-1763948548523513400 .swiper-wrapper{padding-bottom:36px}
 
  
-.post-swiper.postswp-1763455749997053500 .swiper-wrapper{display:flex}
-.post-swiper.postswp-1763455749997053500 .swiper-slide{flex-shrink:0;height:auto}
+.post-swiper.postswp-1763948548523513400 .swiper-wrapper{display:flex}
+.post-swiper.postswp-1763948548523513400 .swiper-slide{flex-shrink:0;height:auto}
 
 .pcard{display:block;background:var(--theme);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit}
 .pcard-img{aspect-ratio:16/9;background:var(--code-bg)}
@@ -377,14 +396,14 @@ Cùng nhau xây dựng môi trường làm việc đoàn kết, an toàn và h�
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-new Swiper('.post-swiper.postswp-1763455749997053500', {
+new Swiper('.post-swiper.postswp-1763948548523513400', {
   loop: true,
   autoplay: { delay: 3500, disableOnInteraction: false },
   slidesPerView: 1,
-  pagination: { el: '.post-swiper.postswp-1763455749997053500 .swiper-pagination', clickable: true },
+  pagination: { el: '.post-swiper.postswp-1763948548523513400 .swiper-pagination', clickable: true },
   navigation: {
-    nextEl: '.post-swiper.postswp-1763455749997053500 .swiper-button-next',
-    prevEl: '.post-swiper.postswp-1763455749997053500 .swiper-button-prev'
+    nextEl: '.post-swiper.postswp-1763948548523513400 .swiper-button-next',
+    prevEl: '.post-swiper.postswp-1763948548523513400 .swiper-button-prev'
   }
 });
 </script>
@@ -463,6 +482,9 @@ new Swiper('.post-swiper.postswp-1763455749997053500', {
     })
 
 </script>
+
+<script src="http://localhost:1313/js/snow.min.69a2a2c179e07cf23a06ce375a327f5eb33abb2c888c2dfa0420addf854a3daa.js"></script>
+  
 </body>
 
 </html>

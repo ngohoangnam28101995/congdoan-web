@@ -17,12 +17,14 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
+{{ partial "background-video.html" . }}   <!-- CHÈN Ở ĐÂY -->
     {{- partialCached "header.html" . .Page -}}
     {{ partial "sidebar.html" . }}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    {{ partial "snow.html" . }}  <!-- thêm ở đây -->
 </body>
 
 </html>
