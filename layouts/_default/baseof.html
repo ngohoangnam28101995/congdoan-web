@@ -24,7 +24,7 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-    {{ partial "snow.html" . }}  <!-- thêm ở đây -->
+    {{/* {{ partial "snow.html" . }}  -- snow effect disabled */}}
 </body>
 
 </html>
