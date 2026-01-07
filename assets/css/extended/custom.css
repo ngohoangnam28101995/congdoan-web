@@ -208,3 +208,50 @@
   --border: var(--border);
   --code-bg: var(--code-bg);
 }
+
+
+/* Cho toàn bộ body dùng background phía sau (hình/video) */
+body {
+  background-color: transparent !important;
+}
+
+/* Xóa nền xám đậm của khối giữa */
+.main {
+  background: transparent !important;
+}
+
+/* Xóa nền xám của khối chứa nội dung (cái panel vuông ở giữa) */
+.page {
+  background: transparent !important;
+  box-shadow: none; /* nếu muốn bỏ luôn cái bóng */
+}
+
+/* Cho thanh header trong suốt */
+.header {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Một số bản PaperMod bọc thêm nav */
+.header .nav,
+.header .nav-wrapper {
+  background: transparent !important;
+}
+
+/* Giữ màu chữ/nút sáng để đọc được trên nền đỏ */
+.header a,
+.header button,
+.header .logo,
+.header .logo a {
+  color: #ffffff !important;
+}
+
+/* đổi màu chữ header sang đen */
+.header a,
+.header .logo,
+.header .logo a,
+.header button,
+.header nav a {
+  color: #000000 !important;
+  fill: #000000 !important;
+}
