@@ -77,21 +77,21 @@ ShowBreadCrumbs: true
 
 
 
-| STT | Tên             | Vị trí        |
-|:---:|-----------------|---------------|
-| 1   | Huỳnh Thị Ngọc Hân    | Chủ tịch      |
-| 2   | Nguyễn Lưu Quyền     | Phó chủ tịch  |
-| 3   | Lý Trọng Nghĩa        | Phó chủ tịch       |
-| 4   | Lương Ái Nhân      | Ủy viên       |
-| 5   | Nguyễn Thị Ánh Dương        | Ủy viên       |
-| 6   | Võ Lê Phương Hà       | Ủy viên       |
-| 7   | Ngô Hoàng Nam      | Ủy viên  |
-| 8   | Nguyễn Văn Dũng        | Ủy viên       |
-| 9   | Nguyễn Ngọc Quý      | Ủy viên       |
-| 10  | Nguyễn Tiến Lên       | Ủy viên       |
-| 11  | Nguyễn Công Khanh      | Ủy viên       |
+| STT | Tên              | Vị trí        |
+|:---:|------------------|---------------|
+| 1   | Trần Lê Bảo Châu | Chủ tịch      |
+| 2   | Nguyễn Lưu Quyền | Phó chủ tịch  |
+| 3   | Lý Trọng Nghĩa   | Phó chủ tịch  |
+| 4   | Lương Ái Nhân    | Ủy viên       |
+| 5   | Ngô Hoàng Nam    | Ủy viên       |
+| 6   | Nguyễn Văn Dũng  | Ủy viên       |
+| 7   | Nguyễn Ngọc Quý  | Ủy viên       |
+| 8   | Nguyễn Công Khanh| Ủy viên       |
+| 9   | Lê Tuấn Anh      | Ủy viên       |
+| 10  | Nguyễn Tiến Lên  | Ban kiểm tra  |
+| 11  | Nguyễn Văn Tân   | Ban kiểm tra  |
 
 
 
-  {{< slider dir="Thanhvien" height="min(50vh, 600px)" >}}
+<!-- {{< slider dir="Thanhvien" height="min(50vh, 600px)" >}} -->
 
