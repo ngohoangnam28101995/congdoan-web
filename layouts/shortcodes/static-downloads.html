@@ -42,12 +42,16 @@
   {{- $files = sort $files "Name" (cond (eq $order "desc") "desc" "asc") -}}
 {{- end -}}
 
+{{- $lblDownload := i18n "dl_download" | default "Tải xuống" -}}
+{{- $lblUpdated  := i18n "dl_updated"  | default "Cập nhật:" -}}
+{{- $lblEmpty    := i18n "dl_empty"    | default "Chưa có tệp nào trong" -}}
+
 {{- if not (len $files) -}}
-<p>Chưa có tệp nào trong <code>/{{ $dir }}</code>.</p>
+<p>{{ $lblEmpty }} <code>/{{ $dir }}</code>.</p>
 {{- else -}}
 <ul class="dl-list">
   {{- range $files }}
-    {{- $href := printf "/%s/%s" $dir .Name -}}
+    {{- $href := printf "/%s/%s" $dir .Name | safeURL -}}
 
     {{- /* icon theo đuôi (không dùng func) */ -}}
     {{- $ext := lower (replaceRE "^.*\\." "" .Name) -}}
@@ -77,9 +81,9 @@
         {{ $emoji }} {{ .Name }}
       </a>
       <span class="dl-meta">
-        ({{ $sizeStr }} · Cập nhật: {{ .ModTime | time.Format "2006-01-02" }})
+        ({{ $sizeStr }} · {{ $lblUpdated }} {{ .ModTime | time.Format "2006-01-02" }})
       </span>
-      <a class="dl-btn" href="{{ $href }}" download="{{ .Name }}" rel="noopener">Tải xuống</a>
+      <a class="dl-btn" href="{{ $href }}" download="{{ .Name }}" rel="noopener">{{ $lblDownload }}</a>
     </li>
   {{- end }}
 </ul>

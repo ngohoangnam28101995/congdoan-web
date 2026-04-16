@@ -1,0 +1,78 @@
+# ── PaperMod strings ──
+- id: prev_page
+  translation: "Trang trước"
+
+- id: next_page
+  translation: "Trang tiếp theo"
+
+- id: read_time
+  translation:
+    one: "1 phút"
+    other: "{{ .Count }} phút"
+
+- id: words
+  translation:
+    one: "từ"
+    other: "{{ .Count }} từ"
+
+- id: toc
+  translation: "Mục lục"
+
+- id: translations
+  translation: "Bản dịch"
+
+- id: home
+  translation: "Trang chủ"
+
+- id: edit_post
+  translation: "Chỉnh sửa"
+
+- id: code_copy
+  translation: "Sao chép"
+
+- id: code_copied
+  translation: "Đã sao chép!"
+
+# ── Sidebar ──
+- id: nav_home
+  translation: "Trang chủ"
+
+- id: nav_bch
+  translation: "Ban Chấp Hành"
+
+- id: nav_hoatdong
+  translation: "Hoạt động & Sự kiện"
+
+- id: nav_phucloi
+  translation: "Phúc lợi Đoàn viên"
+
+- id: nav_tailieu
+  translation: "Biểu mẫu & Tài liệu"
+
+- id: nav_gopy
+  translation: "Góp ý - Kiến nghị"
+
+- id: sidebar_section_main
+  translation: "Menu chính"
+
+- id: sidebar_section_interact
+  translation: "Tương tác"
+
+- id: sidebar_brand_name
+  translation: "Công đoàn CMI"
+
+- id: sidebar_brand_sub
+  translation: "Corsair Marine International"
+
+- id: sidebar_footer
+  translation: "© 2025 Công đoàn Corsair Marine"
+
+# ── Downloads ──
+- id: dl_download
+  translation: "Tải xuống"
+
+- id: dl_updated
+  translation: "Cập nhật:"
+
+- id: dl_empty
+  translation: "Chưa có tệp nào trong"

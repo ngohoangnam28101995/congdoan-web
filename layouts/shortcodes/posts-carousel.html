@@ -1,8 +1,11 @@
 {{- $section := .Get "section" | default "hoatdong" -}}
 {{- $count := .Get "count" | default 1 -}}  <!-- chỉ 1 bài -->
 {{- $uid := printf "postswp-%d" now.UnixNano -}}
-{{- /* Lấy các trang trong section, sắp theo Date giảm dần */ -}}
+{{- /* Lấy các trang trong section; nếu ngôn ngữ hiện tại không có bài thì fallback về ngôn ngữ mặc định */ -}}
 {{- $src := where .Site.RegularPages "Section" $section -}}
+{{- if eq (len $src) 0 -}}
+  {{- $src = where .Site.Sites.Default.RegularPages "Section" $section -}}
+{{- end -}}
 {{- $pages := first (int $count) (sort $src "Date" "desc") -}}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>

@@ -1,0 +1,51 @@
+{{- /*
+  doc-viewer shortcode
+  - PDF  → native browser <iframe> (works on localhost & production)
+  - Word/Excel → Microsoft Office Online Viewer (requires public URL)
+  Usage: {{< doc-viewer file="Quyenloi/filename.pdf" height="900" >}}
+*/ -}}
+
+{{- $file   := .Get "file" -}}
+{{- $height := .Get "height" | default "860" -}}
+{{- $base   := site.BaseURL | strings.TrimRight "/" -}}
+{{- $ext    := $file | path.Ext | lower -}}
+
+{{- /* URL đầy đủ của file */ -}}
+{{- $fileURL := printf "%s/%s" $base $file -}}
+
+{{- /* Chọn viewer theo đuôi file */ -}}
+{{- $viewerSrc := "" -}}
+{{- if eq $ext ".pdf" -}}
+  {{- $viewerSrc = $fileURL -}}
+{{- else -}}
+  {{- $viewerSrc = printf "https://view.officeapps.live.com/op/embed.aspx?src=%s" ($fileURL | urlquery) -}}
+{{- end -}}
+
+{{- $lblDownload := i18n "dl_download" | default "Tải xuống" -}}
+
+<div class="doc-viewer-wrap">
+  <div class="doc-viewer-frame">
+    <iframe
+      src="{{ $viewerSrc | safeURL }}"
+      width="100%"
+      height="{{ $height }}"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen
+      title="{{ $file }}">
+    </iframe>
+  </div>
+  <div class="doc-viewer-bar">
+    <span class="doc-viewer-name">📄 {{ $file | path.Base }}</span>
+    <a class="doc-viewer-dl" href="{{ $fileURL | safeURL }}" download>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      {{ $lblDownload }}
+    </a>
+  </div>
+</div>

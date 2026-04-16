@@ -5,7 +5,14 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
 
-  {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+  {{- /* Nếu không có bài ở ngôn ngữ hiện tại, fallback về ngôn ngữ mặc định */ -}}
+  {{ $rawPages := .Pages }}
+  {{ if eq (len $rawPages) 0 }}
+    {{ with $.Site.Sites.Default.GetPage "/hoatdong" }}
+      {{ $rawPages = .Pages }}
+    {{ end }}
+  {{ end }}
+  {{ $paginator := .Paginate ($rawPages.ByDate.Reverse) }}
 
   <div class="grid3-container">
     {{ range $paginator.Pages }}

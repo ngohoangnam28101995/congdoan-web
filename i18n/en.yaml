@@ -1,0 +1,78 @@
+# ── PaperMod strings ──
+- id: prev_page
+  translation: "Prev"
+
+- id: next_page
+  translation: "Next"
+
+- id: read_time
+  translation:
+    one: "1 min"
+    other: "{{ .Count }} min"
+
+- id: words
+  translation:
+    one: "word"
+    other: "{{ .Count }} words"
+
+- id: toc
+  translation: "Table of Contents"
+
+- id: translations
+  translation: "Translations"
+
+- id: home
+  translation: "Home"
+
+- id: edit_post
+  translation: "Edit"
+
+- id: code_copy
+  translation: "copy"
+
+- id: code_copied
+  translation: "copied!"
+
+# ── Sidebar ──
+- id: nav_home
+  translation: "Home"
+
+- id: nav_bch
+  translation: "Executive Board"
+
+- id: nav_hoatdong
+  translation: "Activities & Events"
+
+- id: nav_phucloi
+  translation: "Member Benefits"
+
+- id: nav_tailieu
+  translation: "Forms & Documents"
+
+- id: nav_gopy
+  translation: "Feedback & Suggestions"
+
+- id: sidebar_section_main
+  translation: "Navigation"
+
+- id: sidebar_section_interact
+  translation: "Interact"
+
+- id: sidebar_brand_name
+  translation: "CMI Union"
+
+- id: sidebar_brand_sub
+  translation: "Corsair Marine International"
+
+- id: sidebar_footer
+  translation: "© 2025 CMI Union – Corsair Marine"
+
+# ── Downloads ──
+- id: dl_download
+  translation: "Download"
+
+- id: dl_updated
+  translation: "Updated:"
+
+- id: dl_empty
+  translation: "No files found in"
