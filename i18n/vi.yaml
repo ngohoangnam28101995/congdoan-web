@@ -52,6 +52,9 @@
 - id: nav_gopy
   translation: "Góp ý - Kiến nghị"
 
+- id: nav_capnhatthongtin
+  translation: "Cập nhật thông tin CĐV"
+
 - id: sidebar_section_main
   translation: "Menu chính"
 

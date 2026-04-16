@@ -52,6 +52,9 @@
 - id: nav_gopy
   translation: "Feedback & Suggestions"
 
+- id: nav_capnhatthongtin
+  translation: "Update Member Information"
+
 - id: sidebar_section_main
   translation: "Navigation"
 
