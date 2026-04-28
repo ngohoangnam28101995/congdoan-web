@@ -80,12 +80,12 @@ ShowBreadCrumbs: true
 | STT | Tên              | Vị trí        |
 |:---:|------------------|---------------|
 | 1   | Trần Lê Bảo Châu | Chủ tịch      |
-| 2   | Nguyễn Lưu Quyền | Phó chủ tịch  |
+| 2   | Nguyễn Ngọc Quý  | Phó chủ tịch  |
 | 3   | Lý Trọng Nghĩa   | Phó chủ tịch  |
 | 4   | Lương Ái Nhân    | Ủy viên       |
 | 5   | Ngô Hoàng Nam    | Ủy viên       |
 | 6   | Nguyễn Văn Dũng  | Ủy viên       |
-| 7   | Nguyễn Ngọc Quý  | Ủy viên       |
+| 7   | Nguyễn Lưu Quyền | Ủy viên       |
 | 8   | Nguyễn Công Khanh| Ủy viên       |
 | 9   | Lê Tuấn Anh      | Ủy viên       |
 | 10  | Nguyễn Tiến Lên  | Ban kiểm tra  |
