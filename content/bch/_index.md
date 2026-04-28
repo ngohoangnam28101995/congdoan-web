@@ -87,9 +87,9 @@ ShowBreadCrumbs: true
 | 6   | Nguyễn Văn Dũng  | Ủy viên       |
 | 7   | Nguyễn Lưu Quyền | Ủy viên       |
 | 8   | Nguyễn Công Khanh| Ủy viên       |
-| 9   | Lê Tuấn Anh      | Ủy viên       |
+| 9   | Nguyễn Văn Tân   | Ủy viên       |
 | 10  | Nguyễn Tiến Lên  | Ban kiểm tra  |
-| 11  | Nguyễn Văn Tân   | Ban kiểm tra  |
+| 11  | Lê Tuấn Anh      | Ban kiểm tra  |
 
 
 

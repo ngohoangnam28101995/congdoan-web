@@ -1,6 +1,6 @@
 ---
-title: "Member Benefits"
-description: "Benefits and welfare information for CMI Union members."
+title: "Phúc lợi Đoàn viên"
+description: "Thông tin về quyền lợi và phúc lợi dành cho đoàn viên Công đoàn CMI."
 date: 2026-02-13
 layout: "single"
 ShowBreadCrumbs: true
@@ -75,40 +75,40 @@ ShowBreadCrumbs: true
   }
 </style>
 
-## Updated Spending Items of the Grassroots Union
+## Cập nhật các khoản chi của Công Đoàn Cơ Sở
 
-This update is **effective from January 1, 2026**.
+Cập nhật này có hiệu lực từ **ngày 01 tháng 01 năm 2026**.
 
-Details of the updated spending items of the Grassroots Union are shown in the table below:
+Chi tiết cập nhật lại các khoản chi của Công Đoàn Cơ Sở như bảng bên dưới:
 
 <div class="table-wrap"><div class="scroll">
 <table>
 <thead>
-<tr><th>Item</th><th>Previous amount</th><th>New amount</th></tr>
+<tr><th>Nội dung</th><th>Mức hưởng cũ</th><th>Mức hưởng mới</th></tr>
 </thead>
 <tbody>
-<tr class="section-row"><td colspan="3">1. Allowances for major holidays of the year</td></tr>
-<tr><td>Cash or gifts for Lunar New Year, Mid-Autumn Festival (All members)</td><td>Subject to union budget</td><td>Subject to union budget</td></tr>
-<tr><td>March 8 holiday allowance (Female members)</td><td>200,000</td><td>300,000</td></tr>
-<tr><td>April 30 holiday allowance (All members)</td><td>—</td><td>200,000</td></tr>
-<tr><td>September 2 holiday allowance (All members)</td><td>—</td><td>200,000</td></tr>
-<tr><td>October 20 holiday allowance (Female members)</td><td>—</td><td>200,000</td></tr>
-<tr class="section-row"><td colspan="3">2. Direct care, protection, and training for members and employees</td></tr>
-<tr><td>Member's lawful marriage</td><td>500,000</td><td>1,000,000</td></tr>
-<tr><td>Childbirth support (member as parent)</td><td>Female member: 1,000,000<br>Male member: 500,000</td><td>(Equal for both)<br>1,500,000</td></tr>
-<tr><td>Work-related accident, outpatient home treatment of 5 days or more</td><td>400,000</td><td>800,000</td></tr>
-<tr><td>Sick leave with hospital treatment of 3 days or more</td><td>600,000</td><td>1,000,000</td></tr>
-<tr><td>Member with critical illness or serious accident</td><td>1,000,000</td><td>2,000,000</td></tr>
-<tr><td>Funeral condolence — member's parents/parents-in-law</td><td>2,000,000</td><td>2,000,000</td></tr>
-<tr><td>Funeral condolence — member's spouse or child</td><td>2,000,000</td><td>3,000,000</td></tr>
-<tr><td>Funeral condolence — member</td><td>3,000,000</td><td>4,000,000</td></tr>
-<tr class="section-row"><td colspan="3">3. Other expenses (member's children)</td></tr>
-<tr><td>Award for excellent academic results — end of school year (per child / year)</td><td>200,000</td><td>400,000</td></tr>
-<tr><td>International Children's Day gift (June 1 every year) (per child / year)</td><td>200,000</td><td>300,000</td></tr>
+<tr class="section-row"><td colspan="3">1. Chi trợ cấp các ngày lễ lớn trong năm</td></tr>
+<tr><td>Chi tiền hoặc quà Tết Nguyên Đán, Trung thu (Tất cả Đoàn viên)</td><td>Tùy theo kinh phí công đoàn</td><td>Tùy theo kinh phí công đoàn</td></tr>
+<tr><td>Chi tiền ngày lễ 08/03 (Đoàn viên nữ)</td><td>200.000</td><td>300.000</td></tr>
+<tr><td>Chi tiền ngày lễ 30/04 (Tất cả Đoàn viên)</td><td>—</td><td>200.000</td></tr>
+<tr><td>Chi tiền ngày lễ 02/09 (Tất cả Đoàn viên)</td><td>—</td><td>200.000</td></tr>
+<tr><td>Chi tiền ngày lễ 20/10 (Đoàn viên nữ)</td><td>—</td><td>200.000</td></tr>
+<tr class="section-row"><td colspan="3">2. Chi trực tiếp chăm lo, bảo vệ, đào tạo đoàn viên và người lao động</td></tr>
+<tr><td>Đoàn viên kết hôn đúng pháp luật</td><td>500.000</td><td>1.000.000</td></tr>
+<tr><td>Chi tiền hỗ trợ sinh con (cha/mẹ là đoàn viên)</td><td>Đoàn viên Nữ: 1.000.000<br>Đoàn viên Nam: 500.000</td><td>(Nam nữ bằng nhau)<br>1.500.000</td></tr>
+<tr><td>Nghỉ do tai nạn lao động điều trị ngoại trú tại nhà từ 5 ngày trở lên</td><td>400.000</td><td>800.000</td></tr>
+<tr><td>Nghỉ ốm, điều trị tại bệnh viện từ 03 ngày trở lên</td><td>600.000</td><td>1.000.000</td></tr>
+<tr><td>Đoàn viên bệnh hiểm nghèo, tai nạn nghiêm trọng</td><td>1.000.000</td><td>2.000.000</td></tr>
+<tr><td>Chi viếng tang tứ thân phụ mẫu</td><td>2.000.000</td><td>2.000.000</td></tr>
+<tr><td>Chi viếng tang vợ, chồng, con</td><td>2.000.000</td><td>3.000.000</td></tr>
+<tr><td>Chi viếng tang đoàn viên</td><td>3.000.000</td><td>4.000.000</td></tr>
+<tr class="section-row"><td colspan="3">3. Chi khác (con của Đoàn viên)</td></tr>
+<tr><td>Chi thưởng các cháu đạt kết quả học tập cuối năm là học sinh giỏi (/cháu/năm)</td><td>200.000</td><td>400.000</td></tr>
+<tr><td>Chi quà Quốc tế thiếu nhi (01/06 hàng năm) (/cháu/năm)</td><td>200.000</td><td>300.000</td></tr>
 </tbody>
 </table>
 </div></div>
 
-*Unit: VND*
+*Đơn vị: VNĐ*
 
-💡 **Note:** For further assistance, please contact the Union Executive Board.
+💡 **Ghi chú:** Nếu cần hỗ trợ thêm, vui lòng liên hệ Ban Chấp Hành Công đoàn.

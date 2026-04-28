@@ -9,13 +9,13 @@ ShowBreadCrumbs: true
 | No. | Name                  | Position           |
 |:---:|-----------------------|--------------------|
 | 1   | Trần Lê Bảo Châu      | Chairperson        |
-| 2   | Nguyễn Lưu Quyền      | Vice Chairperson   |
+| 2   | Nguyễn Ngọc Quý       | Vice Chairperson   |
 | 3   | Lý Trọng Nghĩa        | Vice Chairperson   |
 | 4   | Lương Ái Nhân         | Member             |
 | 5   | Ngô Hoàng Nam         | Member             |
 | 6   | Nguyễn Văn Dũng       | Member             |
-| 7   | Nguyễn Ngọc Quý       | Member             |
+| 7   | Nguyễn Lưu Quyền      | Member             |
 | 8   | Nguyễn Công Khanh     | Member             |
-| 9   | Lê Tuấn Anh           | Member             |
+| 9   | Nguyễn Văn Tân        | Member             |
 | 10  | Nguyễn Tiến Lên       | Inspection Board   |
-| 11  | Nguyễn Văn Tân        | Inspection Board   |
+| 11  | Lê Tuấn Anh           | Inspection Board   |
